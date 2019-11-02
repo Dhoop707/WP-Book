@@ -3,13 +3,14 @@
  * @package WpBook
  */
 
- /*
+/*
     Plugin Name: WP Book
     Description: A plugin that contains lots of features to manage your book posts.
     Author: Dhoop
     Version: 1.0.0
+    Text Domain: rt-book
     License: GPLv2 or later
- */
+*/
 
 /*
 

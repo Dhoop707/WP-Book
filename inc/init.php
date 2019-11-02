@@ -19,7 +19,7 @@ final class init
     public static function get_services()
     {
         return [
-
+            Pages\Admin_CPT::class,
         ];
     }
 
