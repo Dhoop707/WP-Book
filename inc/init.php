@@ -1,0 +1,47 @@
+<?php
+/**
+ * @package WpBook
+ */
+
+namespace Inc;
+
+/*
+    =================
+        init class
+    =================
+*/
+final class init
+{
+    /**
+     * Store all the classes which we want to register
+     * @return array    list of classes
+     */
+    public static function get_services()
+    {
+        return [
+
+        ];
+    }
+
+    /**
+     * Loop through the classes and call the register method.
+     * @return
+     */
+    public static function register_services()
+    {
+        foreach( self::get_services() as $class ) {
+            $service = self::instantiate( $class );
+            $service->register();
+        }
+    }
+
+    /**
+     * Instantiate the class
+     * @param class     class
+     * @return object   object of class
+     */
+    private static function instantiate( $class ) {
+        return new $class;
+    }
+
+}

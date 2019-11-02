@@ -35,3 +35,25 @@ if ( file_exists( dirname( __FILE__ ) . '/vendor/autoload.php' ) ) {
     require_once dirname( __FILE__ ) . '/vendor/autoload.php';
 }
 
+/**
+ * called when user activate the plugin
+ */
+function activate_wp_book() {
+    Inc\Base\Activate::activate();
+}
+
+/**
+ * called when user deactivate the plugin
+ */
+function deactivate_wp_book() {
+    Inc\Base\Deactivate::deactivate();
+}
+
+register_activation_hook( __FILE__, 'activate_wp_book' );
+register_deactivation_hook( __FILE__, 'deactivate_wp_book' );
+
+// Register All the Services of our plugin
+if( class_exists( 'Inc\\init' ) ) {
+    Inc\init::register_services();
+}
+
