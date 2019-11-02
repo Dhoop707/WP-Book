@@ -1,0 +1,17 @@
+{
+    "name": "dhoop/wp-book",
+    "description": "RtCamp WP-Book Plugin Devlopment",
+    "type": "project",
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "Dhoop",
+            "email": "coder707docode@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": { "Inc\\" : "./inc" }
+    }
+}
