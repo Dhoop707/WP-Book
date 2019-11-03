@@ -77,6 +77,8 @@ class Admin_CPT
      * register taxonomy for CPT book
      */
     public function register_custom_taxonomy() {
+
+        // Hierarchical
         $args = [
             'labels' => $this->get_labels( 'Categorie' ),
             'public' => true,
@@ -85,6 +87,7 @@ class Admin_CPT
         ];
         register_taxonomy( 'book-categories', 'book', $args );
 
+        // Non-Hierarchical
         $args = [
             'labels' => $this->get_labels( 'Tag' ),
             'public' => true,
