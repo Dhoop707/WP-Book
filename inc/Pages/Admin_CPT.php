@@ -16,7 +16,9 @@ class Admin_CPT
      * Registering CPT, Hierarchical taxonomy, Non-hierarchical taxonomy related to book.
      */
     public function register() {
+
         add_action( 'init', array( $this, 'register_custom_post_type' ) );
+        add_action( 'init', array( $this, 'register_custom_taxonomy' ) );
     }
 
     /**
@@ -69,6 +71,36 @@ class Admin_CPT
 
         register_post_type( 'book', $args );
 
+    }
+
+    /**
+     * register taxonomy for CPT book
+     */
+    public function register_custom_taxonomy() {
+        $args = [
+            'labels' => $this->get_labels( 'Categorie' ),
+            'public' => true,
+            'rewrite' => array( 'slug' => 'books/categories' ),
+            'hierarchical' => true,
+        ];
+        register_taxonomy( 'book-categories', 'book', $args );
+    }
+
+    /**
+     * generate labels for taxonomy
+     * @return array    array of labels
+     */
+    public function get_labels( string $type ) {
+        return [
+            'name'              => __( 'Book ' . $type . 's', 'rt-book' ),
+            'singular_name'     => __( 'Book ' . $type, 'rt-book' ),
+            'popular_items'     => __( 'Popular Book ' . $type . 's', 'rt-book' ),
+            'edit_item'         => __( 'Edit Book '. $type, 'rt-book'),
+            'view_item'         => __( 'View Book ' . $type, 'rt-book' ),
+            'update_item'       => __( 'Update Book ' . $type, 'rt-book' ),
+            'add_new_item'      => __( 'Add New Book ' . $type, 'rt-book' ),
+            'most_used'         => __( 'Most Used Book ' . $type . 's', 'rt-book' ),
+        ];
     }
 
 }
