@@ -20,6 +20,7 @@ final class init
     {
         return [
             Pages\Admin_CPT::class,
+            Pages\Book_Metabox::class,
         ];
     }
 
