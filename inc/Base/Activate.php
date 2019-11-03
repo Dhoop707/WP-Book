@@ -13,7 +13,6 @@ class Activate
 
         // create bookmeta table 
         Meta_Table::create_table();
-        Meta_Table::register_table_with_wpdb();
         
         // flush rewrite rules
         flush_rewrite_rules();

@@ -7,6 +7,7 @@ namespace Inc\Api;
 
 class Meta_Table
 {
+
     /**
      * Create a new Custom Meta-table for book
      */
@@ -39,11 +40,10 @@ class Meta_Table
     /**
      * usefull in order to run Metadata Api correctly
      */
-    public static function register_table_with_wpdb() {
+    public function register_table_with_wpdb() {
         global $wpdb;
         $wpdb->bookmeta = $wpdb->prefix . 'bookmeta';
         $wpdb->tables[] = 'bookmeta';
     }
 
- 
 }
