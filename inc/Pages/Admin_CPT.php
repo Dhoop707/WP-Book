@@ -84,6 +84,14 @@ class Admin_CPT
             'hierarchical' => true,
         ];
         register_taxonomy( 'book-categories', 'book', $args );
+
+        $args = [
+            'labels' => $this->get_labels( 'Tag' ),
+            'public' => true,
+            'rewrite' => array( 'slug' => 'books/tags' ),
+            'hierarchical' => false,
+        ];
+        register_taxonomy( 'book-tags', 'book', $args );
     }
 
     /**
