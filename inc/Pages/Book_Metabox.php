@@ -37,7 +37,7 @@ class Book_Metabox
 
     public function save_book_metadata( $id ) {
         $this->book_callback->save_author_meta( $id );
-        $this->book_callback->save_author_meta( $id );
+        $this->book_callback->save_publisher_meta( $id );
         $this->book_callback->save_price_meta( $id );
         $this->book_callback->save_year_meta( $id );
         $this->book_callback->save_edition_meta( $id );
