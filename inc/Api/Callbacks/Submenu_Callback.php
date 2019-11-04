@@ -9,9 +9,9 @@ class Submenu_Callback
 {
     /**
      * sanitize callback for number of book input
-     * @param integer   getting input value
+     * @param int   getting input value
      */
-    public function wp_book_count_callback( $input ) {
+    public function wp_book_count_callback( int $input ) {
         return $input;
     }
 
@@ -19,7 +19,7 @@ class Submenu_Callback
      * sanitize callback for currency input
      * @param string   getting input value
      */
-    public function wp_book_currency_callback( $input ) {
+    public function wp_book_currency_callback( string $input ) {
         return $input;
     }
 
@@ -27,7 +27,7 @@ class Submenu_Callback
      * display section information of book
      */
     public function wp_book_section_callback() {
-        echo 'Set Currency and No of pages to display.';
+        _e('Set Currency and No of pages to display.', 'rt-book' );
     }
 
     /**
@@ -57,7 +57,7 @@ class Submenu_Callback
         $output = '<select name="book_currency">';
         foreach( $cur as $value ){
             if( $book_cur === $value['value'] ) { $selected = 'selected="selected"'; } else { $selected = ''; }
-            $output .= '<option value="'. $value['value'] .'" '. $selected .' >'. $value['txt'] .'</option>';
+            $output .= '<option value="'. $value['value'] .'" '. $selected .' >'. __( $value['txt'], 'rt-book' ) .'</option>';
         }
         $output .= '</select>';
         echo $output;

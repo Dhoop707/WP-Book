@@ -70,7 +70,7 @@ class Admin_Menu
         $section_args = [
             [
                 'id' => 'wp-book-section',
-                'title' => 'Book Options',
+                'title' => __('Book Options', 'rt-book'),
                 'callback' => array( $this->menu_callbacks, 'wp_book_section_callback' ),
                 'page' => 'edit.php?post_type=book'
             ]
@@ -79,7 +79,7 @@ class Admin_Menu
         $field_args = [
             [
                 'id' => 'number_of_book',
-                'title' => 'Enter number of book',
+                'title' => __('Enter number of book', 'rt-book'),
                 'callback' => array( $this->menu_callbacks, 'wp_book_count_input' ),
                 'page' => 'edit.php?post_type=book',
                 'section' => 'wp-book-section',
@@ -90,7 +90,7 @@ class Admin_Menu
             ],
             [
                 'id' => 'book_currency',
-                'title' => 'Currency',
+                'title' => __('Choose Currency', 'rt-book'),
                 'callback' => array( $this->menu_callbacks, 'wp_book_currency_input' ),
                 'page' => 'edit.php?post_type=book',
                 'section' => 'wp-book-section',
