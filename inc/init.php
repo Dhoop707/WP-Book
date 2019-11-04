@@ -23,6 +23,7 @@ final class init
             Pages\Book_Metabox::class,
             Pages\Admin_Menu::class,
             Pages\Custom_Shortcode::class,
+            Pages\Custom_Widget::class,
         ];
     }
 
