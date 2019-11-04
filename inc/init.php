@@ -22,6 +22,7 @@ final class init
             Pages\Admin_CPT::class,
             Pages\Book_Metabox::class,
             Pages\Admin_Menu::class,
+            Pages\Custom_Shortcode::class,
         ];
     }
 
