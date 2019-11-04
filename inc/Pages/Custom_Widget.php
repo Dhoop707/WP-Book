@@ -17,12 +17,39 @@ class Custom_Widget
      * Register All the Widgets here.
      */
     public function register() {
-        add_action( 'widgets_init', array( $this, 'loading_book_widget' ) );
+        add_action( 'widgets_init', array( $this, 'create_book_widget' ) );
+        add_action( 'wp_dashboard_setup', array( $this, 'create_book_dashboard_widgets' ) );
     }
 
-    public function loading_book_widget() {
+    /**
+     * register book widget
+     */
+    public function create_book_widget() {
         register_widget( 'Inc\\Pages\\My_Book_Widget' );
-    } 
+    }
+    
+    /**
+     * register book dashboard widget
+     */
+    public function create_book_dashboard_widgets() {
+        wp_add_dashboard_widget('custom_dash_book_widget', 'Top 5 Books', array( $this, 'dashboard_top_book_content') );
+    }
+
+    /**
+     * Query on database to find top 5 book based on category count
+     */
+    public function dashboard_top_book_content() {
+        
+        global $wpdb;
+        $books = $wpdb->get_results( 'select object_id from wp_term_relationships where term_taxonomy_id in ( select term_taxonomy_id from wp_term_taxonomy where taxonomy = "book-categories" order by count DESC ) LIMIT 5' );
+
+        $content = '<div>';
+        foreach( $books as $book ) {
+            $content .= '<p>' . get_the_title( $book->object_id ) . '</p>';
+        }
+        $content .= '</div>';
+        echo $content;
+    }
 
 }
 
