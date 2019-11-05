@@ -1,0 +1,209 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Book\n"
+"POT-Creation-Date: 2019-11-05 13:26+0530\n"
+"PO-Revision-Date: 2019-11-05 13:28+0530\n"
+"Last-Translator: \n"
+"Language-Team: RtCampDev\n"
+"Language: hi_IN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.4\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n==0 || n==1);\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: inc/Api/Callbacks/Book_Callback.php:20
+msgid "Author Name: "
+msgstr "लेखक का नाम:"
+
+#: inc/Api/Callbacks/Book_Callback.php:36
+msgid "Publisher: "
+msgstr "प्रकाशक:"
+
+#: inc/Api/Callbacks/Book_Callback.php:52
+msgid "Price of the book: "
+msgstr "पुस्तक की कीमत:"
+
+#: inc/Api/Callbacks/Book_Callback.php:68
+msgid "Year: "
+msgstr "साल:"
+
+#: inc/Api/Callbacks/Book_Callback.php:84
+msgid "Edition: "
+msgstr "संस्करण:"
+
+#: inc/Api/Callbacks/Book_Callback.php:100
+msgid "Url: "
+msgstr ""
+
+#: inc/Api/Callbacks/Submenu_Callback.php:30
+msgid "Set Currency and No of pages to display."
+msgstr "मुद्रा सेट करें और प्रदर्शित करने के लिए पृष्ठों की संख्या."
+
+#: inc/Pages/Admin_CPT.php:31 inc/Pages/Admin_CPT.php:33
+#: inc/Pages/Custom_Widget.php:66 inc/Pages/Custom_Widget.php:115
+msgid "Books"
+msgstr "पुस्तकों"
+
+#: inc/Pages/Admin_CPT.php:32 inc/Pages/Admin_CPT.php:34
+msgid "Book"
+msgstr "पुस्तक"
+
+#: inc/Pages/Admin_CPT.php:35
+msgid "Add New"
+msgstr "नया जोड़ें"
+
+#: inc/Pages/Admin_CPT.php:36
+msgid "Add New Book"
+msgstr ""
+
+#: inc/Pages/Admin_CPT.php:37
+msgid "New Book"
+msgstr ""
+
+#: inc/Pages/Admin_CPT.php:38
+msgid "Edit Book"
+msgstr ""
+
+#: inc/Pages/Admin_CPT.php:39
+msgid "View Book"
+msgstr ""
+
+#: inc/Pages/Admin_CPT.php:40
+msgid "All Books"
+msgstr ""
+
+#: inc/Pages/Admin_CPT.php:41
+msgid "Search Books"
+msgstr ""
+
+#: inc/Pages/Admin_CPT.php:42
+msgid "Parent Books:"
+msgstr ""
+
+#: inc/Pages/Admin_CPT.php:43
+msgid "No books found."
+msgstr ""
+
+#: inc/Pages/Admin_CPT.php:44
+msgid "No books found in Trash."
+msgstr ""
+
+#: inc/Pages/Admin_CPT.php:45
+msgid "Book Cover Image"
+msgstr ""
+
+#: inc/Pages/Admin_CPT.php:46
+msgid "Set cover image"
+msgstr ""
+
+#: inc/Pages/Admin_CPT.php:47
+msgid "Remove cover image"
+msgstr ""
+
+#: inc/Pages/Admin_CPT.php:48
+msgid "Use as cover image"
+msgstr ""
+
+#: inc/Pages/Admin_CPT.php:49
+msgid "Book archives"
+msgstr ""
+
+#: inc/Pages/Admin_CPT.php:50
+msgid "Insert into book"
+msgstr ""
+
+#: inc/Pages/Admin_CPT.php:51
+msgid "Uploaded to this book"
+msgstr ""
+
+#: inc/Pages/Admin_CPT.php:52
+msgid "Filter books list"
+msgstr ""
+
+#: inc/Pages/Admin_CPT.php:53
+msgid "Books list navigation"
+msgstr ""
+
+#: inc/Pages/Admin_CPT.php:54
+msgid "Books list"
+msgstr ""
+
+#: inc/Pages/Admin_CPT.php:106 inc/Pages/Admin_CPT.php:107
+msgid "Book "
+msgstr ""
+
+#: inc/Pages/Admin_CPT.php:108
+msgid "Popular Book "
+msgstr ""
+
+#: inc/Pages/Admin_CPT.php:109
+msgid "Edit Book "
+msgstr ""
+
+#: inc/Pages/Admin_CPT.php:110
+msgid "View Book "
+msgstr ""
+
+#: inc/Pages/Admin_CPT.php:111
+msgid "Update Book "
+msgstr ""
+
+#: inc/Pages/Admin_CPT.php:112
+msgid "Add New Book "
+msgstr ""
+
+#: inc/Pages/Admin_CPT.php:113
+msgid "Most Used Book "
+msgstr ""
+
+#: inc/Pages/Admin_Menu.php:34 inc/Pages/Admin_Menu.php:35
+msgid "Settings"
+msgstr ""
+
+#: inc/Pages/Admin_Menu.php:73
+msgid "Book Options"
+msgstr ""
+
+#: inc/Pages/Admin_Menu.php:82
+msgid "Enter number of book"
+msgstr ""
+
+#: inc/Pages/Admin_Menu.php:93
+msgid "Choose Currency"
+msgstr ""
+
+#: inc/Pages/Book_Metabox.php:30
+msgid "Author"
+msgstr ""
+
+#: inc/Pages/Book_Metabox.php:31
+msgid "Publisher Name"
+msgstr ""
+
+#: inc/Pages/Book_Metabox.php:32
+msgid "Price "
+msgstr ""
+
+#: inc/Pages/Book_Metabox.php:33
+msgid "Year of Publish"
+msgstr ""
+
+#: inc/Pages/Book_Metabox.php:34
+msgid "Edition Number"
+msgstr ""
+
+#: inc/Pages/Book_Metabox.php:35
+msgid "URL of the book"
+msgstr ""
+
+#: inc/Pages/Custom_Widget.php:35
+msgid "Top 5 Books"
+msgstr ""
+
+#: inc/Pages/Custom_Widget.php:69
+msgid "Display Books of selected categories"
+msgstr ""
