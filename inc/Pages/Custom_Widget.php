@@ -32,7 +32,7 @@ class Custom_Widget
      * register book dashboard widget
      */
     public function create_book_dashboard_widgets() {
-        wp_add_dashboard_widget('custom_dash_book_widget', 'Top 5 Books', array( $this, 'dashboard_top_book_content') );
+        wp_add_dashboard_widget('custom_dash_book_widget', __( 'Top 5 Books', 'rt-book'), array( $this, 'dashboard_top_book_content') );
     }
 
     /**

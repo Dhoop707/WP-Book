@@ -17,7 +17,7 @@ class Book_Callback
 
         <table>
             <tr>
-                <td> <label for="author_book_field">Author Name: </label> </td>
+                <td> <label for="author_book_field"> <?php _e( 'Author Name: ', 'rt-book'); ?> </label> </td>
                 <td> <input type="text" id="author_book_field" name="author_book_field" value="<?php echo esc_attr( $author ); ?>" size="25"/> </td>
             </tr>
         </table>
@@ -33,7 +33,7 @@ class Book_Callback
 
         <table>
             <tr>
-                <td> <label for="publisher_book_field">Publisher: </label> </td>
+                <td> <label for="publisher_book_field"> <?php _e( 'Publisher: ', 'rt-book'); ?> </label> </td>
                 <td> <input type="text" id="publisher_book_field" name="publisher_book_field" value="<?php echo esc_attr( $publisher ); ?>" size="25"/> </td>
             </tr>
         </table>
@@ -49,7 +49,7 @@ class Book_Callback
 
         <table>
             <tr>
-                <td> <label for="price_book_field">Price of the book: </label> </td>
+                <td> <label for="price_book_field"> <?php _e( 'Price of the book: ', 'rt-book'); ?> </label> </td>
                 <td> <input type="number" id="price_book_field" name="price_book_field" value="<?php echo esc_attr( $price ); ?>" min="0" /> </td>
             </tr>
         </table>
@@ -65,7 +65,7 @@ class Book_Callback
 
         <table>
             <tr>
-                <td> <label for="year_book_field">Year: </label> </td>
+                <td> <label for="year_book_field"> <?php _e( 'Year: ', 'rt-book'); ?> </label> </td>
                 <td> <input type="number" id="year_book_field" name="year_book_field" value="<?php echo esc_attr( $year ); ?>" min="0" /> </td>
             </tr>
         </table>
@@ -81,7 +81,7 @@ class Book_Callback
 
         <table>
             <tr>
-                <td> <label for="edition_book_field">Edition: </label> </td>
+                <td> <label for="edition_book_field"> <?php _e( 'Edition: ', 'rt-book'); ?> </label> </td>
                 <td> <input type="number" id="edition_book_field" name="edition_book_field" value="<?php echo esc_attr( $edition ); ?>" min="0" /> </td>
             </tr>
         </table>
@@ -97,7 +97,7 @@ class Book_Callback
             
         <table>
             <tr>
-                <td> <label for="url_book_field">Url: </label> </td>
+                <td> <label for="url_book_field"> <?php _e( 'Url: ', 'rt-book'); ?> </label> </td>
                 <td> <input type="url" id="url_book_field" name="url_book_field" value="<?php echo esc_attr( $url ); ?>" /> </td>
             </tr>
         </table>
