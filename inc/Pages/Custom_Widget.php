@@ -41,7 +41,7 @@ class Custom_Widget
     public function dashboard_top_book_content() {
         
         global $wpdb;
-        $books = $wpdb->get_results( 'select object_id from wp_term_relationships where term_taxonomy_id in ( select term_taxonomy_id from wp_term_taxonomy where taxonomy = "book-categories" order by count DESC ) LIMIT 5' );
+        $books = $wpdb->get_results( 'select object_id, term_taxonomy_id from wp_term_relationships where term_taxonomy_id in ( select term_taxonomy_id from wp_term_taxonomy where taxonomy = "book-categories" order by count DESC ) order BY term_taxonomy_id DESC LIMIT 5' );
 
         $content = '<div>';
         foreach( $books as $book ) {
