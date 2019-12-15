@@ -14,3 +14,6 @@ Full list of features of this plugins.
 
 
 After cloning the repository don't forget to hit "install composer" command. It will simply just add the vendor folder into your directory.
+
+# Demo Video Link
+https://youtu.be/rI2CWWpU5zg
